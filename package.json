@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev:internal": "nodemon --watch ./interval.ts --exec ts-node ./interval.ts",
-    "build:internal": "rm -Rf dist && tsc --project tsconfig.server.json && tsc-alias -p tsconfig.server.json",
-    "start:internal": "node dist/interval.js"
+    "dev:interval": "nodemon --watch ./interval.ts --exec ts-node ./interval.ts",
+    "build:interval": "rm -Rf dist && tsc --project tsconfig.server.json && tsc-alias -p tsconfig.server.json",
+    "start:interval": "node dist/interval.js"
   },
   "dependencies": {
     "@interval/sdk": "https://s3.us-west-1.wasabisys.com/interval-sdk/interval-sdk-v0.11.0.tgz",

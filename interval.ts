@@ -2,7 +2,8 @@ import Interval from "@interval/sdk";
 import { randomNumber } from "server/utils";
 
 const interval = new Interval({
-  apiKey: "dan_dev_NydFzK4dBMzIrlfcnBPqVhoOMKuNMcPqoj4OS5rAsRc4x4mJ",
+  // get your API key from https://intervalkit.com/dashboard/develop/keys
+  apiKey: "YOUR_API_KEY",
   actions: {
     enter_a_number: async (io) => {
       const min = randomNumber(1, 10);
