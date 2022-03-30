@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and configured to run [Interval](https://intervalkit.com) as a separate process.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and configured to run [Interval](https://intervalkit.com) as a separate process, which is our recommended method for running Interval in a Next.js project. We also have an example of [running Interval within a custom server](https://github.com/interval/interval-nextjs-custom-server), if you prefer.
 
 ## Getting Started
 
