@@ -1,7 +1,6 @@
 {
   "name": "interval-nextjs",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +11,7 @@
     "start:interval": "node dist/interval.js"
   },
   "dependencies": {
-    "@interval/sdk": "https://s3.us-west-1.wasabisys.com/interval-sdk/interval-sdk-v0.11.0.tgz",
+    "@interval/sdk": "^0.21.0",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"

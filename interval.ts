@@ -1,18 +1,16 @@
-import Interval from "@interval/sdk";
+import Interval, { io } from "@interval/sdk";
 import { randomNumber } from "server/utils";
 
 const interval = new Interval({
-  // get your API key from https://intervalkit.com/dashboard/develop/keys
+  // get your API key from https://interval.com/dashboard/develop/keys
   apiKey: "YOUR_API_KEY",
   actions: {
-    enter_a_number: async (io) => {
-      const min = randomNumber(1, 10);
+    hello_world: async () => {
+      // Contrived example of using a shared function (randomNumber) across Next and Interval
+      console.log("Random number", randomNumber(0, 100));
 
-      const num = await io.input.number(`Enter a number greater than ${min}`, {
-        min,
-      });
-
-      return { num };
+      const name = await io.input.text("Enter your name");
+      return `Hello, ${name}!`;
     },
   },
 });
