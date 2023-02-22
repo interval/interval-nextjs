@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and configured to run [Interval](https://interval.com) as a separate process, which is our recommended method for running Interval in a Next.js project. We also have an example of [running Interval within a custom server](https://github.com/interval/interval-nextjs-custom-server), if you prefer.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and configured to run [Interval](https://interval.com) as a separate process, which is our recommended method for running Interval in a Next.js project. 
+
+We do not recommend running Interval within your Next.js deployment, as Interval's requirement of a constant two-way connection with your app is incompatible with Next.js's architecture and many common Next.js deployment targets. Instead, we recommend co-locating Interval with your Next.js app to take advantage of importing and running your app's code from within your Interval actions, and deploying a production build to a separate service (e.g. [Railway](https://railway.app) or [Render](https://render.com)).
 
 ## Getting Started
 
