@@ -2,8 +2,9 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
+    "noEmit": false,
     "outDir": "dist",
-    "noEmit": false
+    "rootDir": "."
   },
-  "include": ["interval.ts", "server/**/*.ts"]
+  "include": ["server/**/*.ts"]
 }

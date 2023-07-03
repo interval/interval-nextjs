@@ -3,7 +3,7 @@ import { randomNumber } from "server/utils";
 
 const interval = new Interval({
   // get your API key from https://interval.com/dashboard/develop/keys
-  apiKey: "YOUR_API_KEY",
+  apiKey: "dan_dev_NydFzK4dBMzIrlfcnBPqVhoOMKuNMcPqoj4OS5rAsRc4x4mJ",
   actions: {
     hello_world: {
       name: "Hello world",

@@ -6,9 +6,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev:interval": "nodemon --watch ./interval.ts --exec ts-node ./interval.ts",
-    "build:interval": "rm -Rf dist && tsc --project tsconfig.server.json && tsc-alias -p tsconfig.server.json",
-    "start:interval": "node dist/interval.js"
+    "dev:interval": "tsx watch ./server/interval.ts",
+    "build:interval": "rm -Rf dist && tsc --project tsconfig.interval.json && tsc-alias -p tsconfig.interval.json",
+    "start:interval": "node dist/server/interval.js"
   },
   "dependencies": {
     "@interval/sdk": "latest",
@@ -21,10 +21,8 @@
     "@types/react": "17.0.41",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.7.0",
     "tsc-alias": "^1.6.4",
-    "tsconfig-paths": "^3.14.0",
+    "tsx": "^3.12.7",
     "typescript": "4.6.2"
   }
 }
